@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2vmax;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2vh 4vh 2vh 4vh;
+  background-color: brown;
+  color: white;
+  min-width: 200px; /* tại sao min-width rồi mà khi thu nhỏ nó vẫn nhỏ hơn mw? */
+}
+
+header h1 {
+  margin-bottom: 1vh;
+  font-size: 3vmax;
+}
+
+.header {
+  display: flex;
+  width: 60%;
+}
+
+/* Style the input area */
+.header input {
+  width: 75%;
+  min-width: 150px;
+  padding: 2vh 1vh 2vh 1vh;
+  border: 1.5px solid #eee;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Style the Add button */
+.header-btn {
+  padding: 1vh 5vh;
+  border: 1.5px solid #eee;
+  border-radius: 0 3px 3px 0;
+  width: 25%;
+}
+
+.header-btn:hover {
+  background-color: #b5b5b5;
+  transition: 0.3s;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh 15vh;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+li:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Dark background-color on hover */
+li:hover {
+  background-color: #ddd;
+  transition: 0.5s;
+}
+
+li:checked {
+  text-decoration: line-through;
+  background-color: #888;
+  color: #fff;
+}
+
+.fa-remove {
+  opacity: 0.5;
+}
+
+.completed {
+  color: red;
+}
